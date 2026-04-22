@@ -1,2 +1,31 @@
 # 6DATA007W.YDS-FYP_FINAL_REPORT
-Final and updated repository for my final year project. Includes content covered in the second interim (refer to "final_project_interim2) as well as the finalised version of codes, datasets and any extra content that wasn't included in the previous repository
+Final and updated repository for my final year project. Includes content covered in the second interim (refer to "final_project_interim2) as well as the finalised version of codes, datasets and any extra content that wasn't included in the previous repository.
+
+*Final updates \/
+
+**\/ Previously, on Interim 2 !!
+Understanding the dynamics of Crime through data: A case study of London (UK) Second stage of my Final year project with preliminary analysis of crime dataset from January 2024 to December 2025.
+
+This repository has the Crime dataset scraped from the London datastore. It contains the count of crime, the types, the years and the months. The data was recorded at borough level which is good for analysis and this was it is also possible to compare different boroughs and other socio-economic datasets also set at borough level to find relationships.
+
+From initial analysis, the years and months are put together (January 2024 is 202401) and are along the X axis, meaning that the dataset had to be reshaped. This is so that analysis is done more efficiently when merging datasets as most datasets on socio-economic factors are in the long format. There were also strange values recorded for BoroughName and were labelled as "Unknown". Using the Excel filter, they were deleted so that what remained was all the confirmed boroughs and crime types as well as their crime count.
+
+Other changes were:
+
+BoroughName was changed to "Borough" for simplicity.
+Changed MinorText to "Crime_Type"
+Did not change format of dates and times in Excel
+Did not change table format to Long in Excel.
+Using Google Colab, the dataset was loaded after being slightly modified so that it would be further modified.
+
+Modifications included:
+
+"MajorText" being dropped
+Format of dataset was changed to Long to fit analytical requirements
+Month and year were separated during pre-processing as AI assistant suggested it would improve efficiency of analysis
+Any missing values in the crime count were set as 0
+After initial pre-processing, the data was saved as a csv named "Crime_Data_Jan2024_Dec2025.csv"
+
+To load the data, using google colab, upload "MPS_Borough_Level_Crime_Analysis_Ready" and copy the file path and paste it as the variable for "crime_csv_url". then run the code as normal to get results.
+
+Errors may occur if GitHub being unable to let you search the dataset means that the format has changed. If no errors occur, ignore the previous line.
