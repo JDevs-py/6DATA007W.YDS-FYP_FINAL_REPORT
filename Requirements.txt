@@ -1,0 +1,16 @@
+Power BI
+-dashboarding
+Excel
+-pre-processing of datasets
+
+# ** Previously, on interim 2 \/
+Python libraries (# Taken from different tutorials in other modules)
+-Pandas: Loading data and saving them
+-Seaborn: barplots
+-Plotly: Scatterplots
+-Matplotlib: figure titles
+-Numpy: arrays
+
+# Further libraries required for future progression
+-dataprep.eda
+-Scipy
